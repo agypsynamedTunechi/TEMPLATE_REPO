@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>JUST DO IT</h1>
+    </header>
+    <main id="content">
+        <div class="project-container">
+            
+        </div>
+        
+        <div class="todo-container"></div>
+
+    </main>
+    <dialog id="project-dialog">
+            <form action="">
+                <h2>New Project</h2>
+                <input type="text" name="project-title" id="project-title" placeholder="Project Name" required>
+                <div class="project-form-button">
+                    <button  class="cancel-btn" value="cancel" formnovalidate>Cancel</button>
+                    <button type="submit" class="add-btn">Add</button>
+                </div>
+
+            </form>
+        </dialog>
+
+        <dialog id="edit-project-dialog">
+            <form id="project-form" action="">
+                <h2>Edit Project</h2>
+                <input type="text" name="edit-title" id="edit-title" placeholder="Edit Project Name" required>
+                <div class="project-form-button">
+                    <button  class=" edit-cancel-btn" value="cancel" formnovalidate>Cancel</button>
+                    <button type="submit" class="edit-btn">Edit</button>
+                </div>
+
+            </form>
+        </dialog>
+
+        <dialog id="todo-dialog">
+            <form id="todo-form" action="">
+                <input type="text" name="todo-title" id="todo-title" placeholder="Todo" required>
+                <textarea name="todo-description" id="todo-description" placeholder="Todo Details..."></textarea>
+                <input type="date" name="todo-due-date" id="todo-due-date" required>
+                <label for="todo-priority">Priority:</label>
+                <select name="todo-priority" id="todo-priority">
+                    <option value="urgent">urgent and important</option>
+                    <option value="Schedule">important, not urgent</option>
+                    <option value="Delegate">urgent, not important</option>
+                    <option value="Delete">not urgent and not important</option>
+                </select>
+                <div class="todo-form-button">
+                    <button class="todo-cancel-btn" value="cancel" formnovalidate>Cancel</button>
+                    <button class="add-todo-btn">Add Todo</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="edit-todo-dialog">
+            <form action="">
+                <input type="text" name="edit-todo-title" id="edit-todo-title" placeholder="Edit Todo" required>
+                <textarea name="edit-todo-description" id="edit-todo-description" placeholder="Edit Todo Details..."></textarea>
+                <input type="date" name="edit-todo-due-date" id="edit-todo-due-date" required>
+                <label for="edit-todo-priority">Priority:</label>
+                <select name="edit-todo-priority" id="edit-todo-priority">
+                    <option value="urgent">urgent and important</option>
+                    <option value="Schedule">important, not urgent</option>
+                    <option value="Delegate">urgent, not important</option>
+                    <option value="Delete">not urgent and not important</option>
+                </select>
+                <div class="edit-todo-form-button">
+                    <button class="edit-todo-cancel-btn" value="cancel" formnovalidate>Cancel</button>
+                    <button class="edit-todo-btn">Edit Todo</button>
+                </div>
+            </form>
+        </dialog>
+
+
+
+</body>
+
+</html>
